@@ -41,5 +41,8 @@ def delete_selected():
     conn.commit()
     refresh_list()
 
+tk.Button(root, text="Добавить", command=add_item).pack(fill="x")
+tk.Button(root, text="Удалить выбранное", command=delete_selected).pack(fill="x")
+
 refresh_list()
 root.mainloop()
